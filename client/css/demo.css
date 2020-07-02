@@ -1,0 +1,113 @@
+/* 导航 */
+.logo-container {
+    position: relative;
+    width: 100%;
+    background: #fff;
+
+}
+
+.logo-container .header-logo {
+    width: 98px;
+    height: 58px;
+    margin: 0 auto;
+    padding: 55px 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.logo-container .nav-container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.logo-container .nav-container .nav {
+    display: inline-block;
+}
+
+.logo-container .nav-container .nav>ul {
+    font-size: 0;
+    float: left;
+    width: 930px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo-container .nav-container .nav>ul li.item-first {
+    padding-right: 8px;
+}
+
+.logo-container .nav-container .nav>ul li {
+    vertical-align: middle;
+    font-size: 20px;
+    width: 80px;
+    float: left;
+}
+
+.logo-container .nav-container .nav>ul>li>a {
+    font-weight: bold;
+    color: #333;
+}
+
+/* 搜索框 */
+.logo-container .nav-container .nav .search-wrapper {
+    float: right;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+}
+
+.logo-container .nav-container .nav .search-wrapper .search {
+    width: 180px;
+    height: 22px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+.logo-container .nav-container .nav .search-wrapper .search input {
+    padding: 0;
+    width: 160px;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    height: 20px;
+
+}
+
+input {
+    font: 12px/20px tahoma, 'Microsoft YaHei';
+    vertical-align: middle;
+    margin: 0;
+}
+
+#logo form .input_box .searchmenu {
+    width: 180px;
+    top: 29px;
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #4c2601;
+    box-shadow: 0 0 5px #ccc;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+    font-size: 12px;
+    color: #333;
+}
+
+.logo-container .nav-container .nav .search-wrapper .search .bg-Details_page_enlarge {
+    cursor: pointer;
+    width: 15px;
+    height: 16px;
+    background: url(../img/css_sprites.png)-177px -10px;
+}

@@ -1,0 +1,181 @@
+.footer-feature {
+    font-family: '宋体';
+    overflow: hidden;
+    width: 100%;
+    background: #333;
+    border-bottom: 1px solid #666;
+}
+
+.footer-feature .container,
+.footer-help .container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.footer-feature .container .customer-service {
+    border-bottom: #666;
+    color: #fff;
+}
+
+.footer-feature .container .customer-service .content {
+    margin-top: 46px;
+    margin-bottom: 42px;
+    font-size: 18px;
+}
+
+.footer-feature .container .content li,
+.footer-help .container .content li {
+    display: inline-block;
+}
+
+.footer-feature .container .customer-service .content .bg-bottom_logistics {
+    width: 27px;
+    height: 27px;
+    background: url(../img/css_sprites.png)-10px -10px;
+}
+
+.footer-feature .container .customer-service .content i,
+.footer-feature .container .customer-service .content span.title {
+    vertical-align: middle;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.footer-feature .container .customer-service .content .item {
+    margin-left: 50px;
+}
+
+.footer-feature .container .customer-service .content .bg-bottom_ensure {
+    width: 27px;
+    height: 27px;
+    background: url(../img/css_sprites.png)-57px -57px;
+}
+
+.footer-feature .container .customer-service .content .title>a,
+.footer-feature .container .customer-service .content .title>a:hover {
+    color: #fff;
+}
+
+.footer-feature .container .customer-service .content .bg-bottom_service {
+    width: 27px;
+    height: 27px;
+    background: url(../img/css_sprites.png)-10px -57px;
+}
+
+.footer-feature .container .customer-service .content .bg-bottom_Price_difference {
+    width: 27px;
+    height: 27px;
+    background: url(../img/css_sprites.png)-57px -10px;
+}
+
+.footer-help {
+    overflow: hidden;
+    width: 100%;
+    background: #333;
+    border-bottom: 1px solid #666;
+}
+
+.footer-help .guide-container .content {
+    margin-top: 25px;
+    /* float: left; */
+}
+
+.footer-help .guide-container .content .item {
+    margin-left: 90px;
+}
+
+.footer-help .guide-container .content dt {
+    color: #fff;
+}
+
+.footer-help .guide-container .content .dd-title-first {
+    margin-top: 20px;
+}
+
+.footer-help .guide-container .link {
+    color: #666;
+}
+
+.footer-help .guide-container .content .dd-title {
+    margin-top: 15px;
+}
+
+.footer-help .guide-container .content .bg-bottom_Consultation {
+    width: 17px;
+    height: 13px;
+    background: url(../img/css_sprites.png)-124px -140px;
+    vertical-align: middle;
+}
+
+.footer-help .national-certification {
+    color: #fff;
+}
+
+.footer-help .national-certification .content {
+    display: inline-block;
+    margin-top: 160px;
+}
+
+.footer-help .national-certification .content .item {
+    margin-left: 12px;
+}
+
+.footer-help .national-certification .qr-code {
+    margin-left: 200px;
+    vertical-align: bottom;
+}
+
+.footer-help .national-certification .qr-code,
+.footer-help .national-certification .qr-code li {
+    display: inline-block;
+}
+
+.footer-help .national-certification .qr-code .border {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.footer-help .national-certification .qr-code .item {
+    margin-left: 54px;
+}
+
+.footer-help .national-certification .qr-code .border .img-app {
+    margin-top: 8px;
+}
+
+.footer-help .national-certification .qr-code .title {
+    text-align: center;
+}
+
+.footer-help .friendly-link {
+    margin-top: 25px;
+}
+
+.footer-help .friendly-link .title-first {
+    margin-right: 10px;
+}
+
+.footer-help .friendly-link a {
+    color: #fff;
+}
+
+.footer-help .friendly-link .title {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-help .copyriht {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.footer-help .copyriht a {
+    color: #fff;
+}
