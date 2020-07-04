@@ -28,7 +28,7 @@ $(() => {
 
     $(".nreg_from input").blur(function () {
         let action_id = this.id;
-        console.log("options", options[action_id]);
+        // console.log("options", options[action_id]);
         // let res = /^1[3-9]\\d{9}$/.test(val);
         let val = $.trim($(this).val());
         // console.log(options[action]);
@@ -88,11 +88,11 @@ $(() => {
         // $("#number,#password,#password2,#code2_").trigger("blur");
 
         if ($(".nreg_error").length !== 0) {
-            console.log(1);
+            // console.log(1);
             return;
             // console.log(1);
         }
-        console.log(2);
+        // console.log(2);
 
         // if (!ok0) {
         //     alert("ok0检查没有通过");
@@ -119,13 +119,14 @@ $(() => {
             password: $.trim($("#password").val())
         }
 
-        console.log("click++++");
+        // console.log("click++++");
         $.ajax({
             url: "../../server/php/register.php",
             type: "post",
             data,
             dataType: "json",
         }).done(data => {
+            // console.log(data);
             if (data.status == "success") {
                 alert("注册成功!");
                 location.href = "../html/Login.html";

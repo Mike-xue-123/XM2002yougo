@@ -1,7 +1,7 @@
 $(() => {
-
-    getPageCount();
     getDataAndRenderUI("default");
+    getPageCount();
+
     /* 获取页码的数量 */
     function getPageCount() {
         $.ajax({
@@ -12,7 +12,7 @@ $(() => {
                 /* 创建页码 */
                 let pageStr = "";
                 for (let i = 0; i < response; i++) {
-                    pageStr += `<li class=${i==0?"active":""}><a href="javascript:void(0)">${i+1}</a></li>`
+                    pageStr += `<li class='p-class${i==0?"active":""}'><a href="javascript:void(0)">${i+1}</a></li>`
                 }
                 $(pageStr).insertBefore("#nextPage");
             }
@@ -114,16 +114,35 @@ $(() => {
     })
 
     /* 分页的功能 */
-    $(".pagination").on("click", ".p-class", function (e) {
-        console.log("i++");
+    $(".pagination").on("click", "a", function (e) {
+        // console.log("i++");
+        e.preventDefault();
+
         // $(e.target).addClass("active").parent().siblings().find("a").removeClass("active");
         // $(this).addClass("cur").siblings().removeClass("cur");
+        if ($(this).parent()[0].id == "prevPage" || $(this).parent()[0].id == "nextPage") return;
         /* 设置选中状态的切换 */
-        // $(this).addClass("cur").siblings().removeClass("cur");
+        console.log($(this).parent()[0]);
+
+        $(this).parent().addClass("active").siblings().removeClass("active");
         let page = $(this).text() * 1 - 1;
-        // console.log(page);   
+        console.log(page);
         getDataAndRenderUI($(".active").data().sort, page)
 
+    })
+    /* 上一页 下一页 的 功能 */
+    $("#prevPage,#nextPage").click(function () {
+        /* 设置选中状态 */
+        let page = $(".active").text() * 1 - 1;
+        console.log("page", page);
+        if (this.id == "prevPage") {
+            page--;
+        } else if (this.id == "nextPage") {
+            page++;
+        }
+        $(".p-class").eq(page).addClass("active").siblings().removeClass("active");
+        // console.log($("pagination").children("li:gt(0)").eq(page));
+        getDataAndRenderUI($(".active").data().sort, page)
     })
 
 })

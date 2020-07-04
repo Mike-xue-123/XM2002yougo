@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/Cart.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/Cart.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
+</head>
+
+<body style="background: #fff;">
+    <!-- 头部 -->
+    <div class="header"></div>
+    <div class="cen cart_header">
+        <h1 class="logo"><a href="https://www.yougou.com" title="优生活，购时尚"><img
+                    src="https://pcs1.ygimg.cn/template/common/images/logo-yg.png" alt="优购时尚商城"></a></h1>
+        <div class="fr cart_step mt20">
+            <ul>
+                <li class="current">我的购物袋<em></em><i></i></li>
+                <li>提交订单中心<em></em><i></i></li>
+                <li>成功提交订单<em></em><i></i></li>
+            </ul>
+        </div>
+    </div>
+    <span class="none">
+        <input type="hidden" id="addProductMaxNum" value="1">
+        <input type="hidden" id="limitCartAddProductMaxNum" value="100">
+        <input type="hidden" id="orderNum" value="0">
+        <input type="hidden" id="isLock" value="false">
+        <input type="hidden" id="limitOrderNum" value="40">
+        <input type="hidden" id="limitOrderCommBuyMaxNum" value="40">
+        <input type="hidden" id="isKrwFreeDuty" value="false">
+    </span>
+    <div id="shoppingCartContainerCNY">
+        <div class="cen cart_gray_box mt20">
+            <table class="cart_list_tb">
+                <colgroup>
+                    <col width="60">
+                    <col width="370">
+                    <col width="110">
+                    <col width="110">
+                    <col width="110">
+                    <col width="110">
+                    <col width="120">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>
+                            <label name="CNYcheckAllLabel" class="ygChkbox" tradecurrency="CNY">
+                                <input class="none" type="checkbox" id="CNYcheckStartAll" name="CNYcheckAll"
+                                    checked="checked">
+                                <i class="skin fl mt5 ml20 checked"></i>
+                                全选
+                            </label>
+                        </th>
+                        <th>
+                            <span class="pr25">商品名称</span>
+                        </th>
+                        <th>颜色尺码</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>小计(元)</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="tr_td" colspan="7">
+                            <input type="hidden" value="1" id="productRecordNum">
+                            <input type="hidden" value="0" id="productGiftRecordNum">
+                            <input type="hidden" value="1" id="orderCommNum">
+
+                            <!-- 优购时尚商城开始-->
+
+
+
+
+
+                            <div id="shopping_cart0" class="shopping_cart_tr ">
+                                <div class="shpcrt_blank10 clearfix"></div>
+                                <dl class="clearfix">
+                                    <input type="hidden" value="2020-07-04 16:45:32" id="addTime">
+                                    <dd class="fl rel col_chkbox">
+                                        <label class="ygChkbox">
+                                            <input type="checkbox" value="6b94b2817b69b90069ce4d84c2c2cc84__n"
+                                                name="CNYcheck" pid="e2b8b3d135de40ee9d129774a53ee086" psize="34"
+                                                prono="101305752006" class="none" checked="checked">
+                                            <i class="skin fl checked"></i>
+                                        </label>
+                                    </dd>
+                                    <dt class="col_1 fl rel">
+                                        <a target="_blank"
+                                            href="http://www.yougou.com/c-belle/sku-u8n1dam0-101305752.shtml">
+                                            <img onerror="this.src='/images/common/160x160.jpg'"
+                                                src="//i2.ygimg.cn/pics/belle/2020/101305752/101305752_01_t.jpg?9"
+                                                width="60" height="60" class="thumImg">
+
+                                        </a>
+                                    </dt>
+                                    <dd class="col_2 fl rel">
+                                        <a target="_blank"
+                                            href="http://www.yougou.com/c-belle/sku-u8n1dam0-101305752.shtml"
+                                            title="BELLE/百丽2020春新商场同款复合材料女休闲鞋U8N1DAM0" class="shopLink">
+                                            <div>BELLE/百丽2020春新商场同款复合材料女休闲鞋U8N1DAM0</div>
+                                        </a>
+
+                                    </dd>
+                                    <dd class="col_3 fl">
+                                        <div class="pl20">
+                                            <p class="cgray tleft">颜色：<em class="f_gray">白色</em></p>
+
+                                            <p class="cgray tleft">尺码：<em class="f_gray">34</em></p>
+                                        </div>
+                                    </dd>
+                                    <dd class="col_4 fl rel ">
+                                        549
+
+                                    </dd>
+                                    <dd class="col_5 fl rel">
+                                        <a class="goodsSub fl" proindex="1" href="javascript:void(0);">-</a>
+                                        <input id="selectNum_1" proindex="1" class="goodsTxt fl" type="text" value="1"
+                                            name="goodsCount">
+                                        <a class="goodsPlus fl" proindex="1" href="javascript:void(0);">+</a>
+
+                                        <input type="hidden" id="productId_1"
+                                            value="6b94b2817b69b90069ce4d84c2c2cc84__n">
+                                        <input type="hidden" id="productNo_1" value="101305752006">
+                                        <input type="hidden" id="minCanBuyNum_1" value="1">
+                                        <input type="hidden" id="maxCanBuyNum_1" value="50">
+
+                                        <input type="hidden" name="oldNum_101305752006" id="oldNum_1" value="1">
+                                    </dd>
+                                    <dd class="col_6 fl"><strong class="corg"></strong></dd>
+                                    <dd class="col_7 fl">
+                                        <a class="JsFavorite" pid="e2b8b3d135de40ee9d129774a53ee086" psize="34"
+                                            prono="101305752006" spid="6b94b2817b69b90069ce4d84c2c2cc84__n"
+                                            href="javascript:void(0)">移入收藏夹</a>
+                                        <br>
+                                        <a href="javascript:void(0)" prono="101305752006" class="JsRemoveGood JsDel"
+                                            pid="6b94b2817b69b90069ce4d84c2c2cc84__n">删除</a>
+                                    </dd>
+                                </dl>
+
+
+                                <div class="shpcrt_blank10 clearfix"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul class="shpcrt_operations">
+                <li>
+                    <label name="CNYcheckAllLabel" class="ygChkbox" tradecurrency="CNY">
+                        <input class="none" type="checkbox" id="CNYcheckEndAll" name="CNYcheckAll" checked="checked">
+                        <i class="skin fl mt5 ml20 checked"></i>
+                        全选
+                    </label>
+                </li>
+                <li>
+                    <a class="JsFavorite" pid="all" href="javascript:;">移入收藏夹</a>
+                </li>
+                <li>
+                    <a class="JsRemoveGood" pid="all" href="javascript:;">删除</a>
+                </li>
+            </ul>
+
+
+            <div class="shpcrt_opt clearfix">
+                <div class="opt_bd fr">
+                    <table class="ygtjzx_ttl_lrtbl cart_reduce_price">
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="cen cart_gray_box_ft">
+            <a href="/" class="cart_goon_link mt5 ml20 fl">继续购物</a>
+            <div class="fl mt15">
+                <a href="javascript:;" class="cblue ml20 clearShopcart" tradecurrency="CNY">清空购物袋</a>
+            </div>
+            <div class="fr">
+                <strong>总计（不含运费
+                    ）</strong>：<strong class="cgray f16">¥</strong><strong class="corg f20"></strong>
+                <a href="/continueOrder.jhtml?tradeCurrency=CNY" class="cart_b_paybtn ml10 ">去结算</a>
+            </div>
+        </div>
+        <div class="cen mt15">
+            <div class="fr cgray cart_btinfo">
+                <p class="cart_bz">
+                    购物保障：100%正品 10天退换货 10天补差价
+                </p>
+                <p>优惠券/礼品卡在下一步使用</p>
+                <p><a href="/shoppingcart/shoppingcart_advise.jhtml" target="_blank" class="cgray">帮助我们改进购物流程</a></p>
+            </div>
+        </div>
+        <!--//最低成单金额start-->
+        <!--//最低成单金额end-->
+
+        <!--//最大成单金额start-->
+        <!--//最大成单金额end-->
+    </div>
+    <div class="cgray cen footer">
+        <span class="pr10">
+            Copyright © 2011-2014 Yougou Technology Co., Ltd.
+        </span>
+        <span class="pr10">
+            <a href="" target="_blank">粤ICP备09070608号-4</a>
+        </span>
+        <span class="pr10">
+            增值电信业务经营许可证：<a href="" target="_blank">粤 B2-20090203</a>
+        </span>
+    </div>
+    <script>
+        $(".header").load("head.html");
+    </script>
+</body>
+
+</html>
