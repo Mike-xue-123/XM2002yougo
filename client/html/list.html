@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/list.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body style="background: #fff fixed;">
+    <!-- 头部 -->
+    <div class="header"></div>
+    <!-- 导航栏 -->
+    <div class="demod"></div>
+    <!-- 主体 -->
+    <div class="filter-wrap" style="margin-top: 0px;">
+        <div class="filter-title-list">
+            <ul class="menu-list">
+                <li><a href="/">首页</a><span class="fenge">&nbsp;&gt;</span></li>
+                <li>
+                    <a href="" title="女鞋">女鞋</a>
+                </li>
+                <span class="fenge">&nbsp;&nbsp;</span>
+            </ul>
+            <ul class="filter-result-list">
+            </ul>
+        </div>
+        <div class="filter-sub-wrap">
+            <div class="filter-sub-navlist">
+                <p>共<span>&gt;21727</span>个结果</p>
+                <form action="" method="get">
+                    <ul class="filter-list-wrap">
+                        <li class="checkbox hideDefault">
+                            <p><i></i>品牌</p>
+                            <div>
+                                <ul name="seo_en_brand_name">
+                                    <li>
+                                        <input type="checkbox" name="belle" value="" class="input-checkbox"
+                                            id="propCat00">
+                                        <label for="propCat00" href="" title="百丽">百丽</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="tata" value="" class="input-checkbox"
+                                            id="propCat01">
+                                        <label for="propCat01" href="" title="他她">他她</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="teenmix" value="" class="input-checkbox"
+                                            id="propCat02">
+                                        <label for="propCat02" href="" title="天美意">天美意</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="basto" value="" class="input-checkbox"
+                                            id="propCat03">
+                                        <label for="propCat03" href="" title="百思图">百思图</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="staccato" value="" class="input-checkbox"
+                                            id="propCat04">
+                                        <label for="propCat04" href="" title="思加图">思加图</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="senda" value="" class="input-checkbox"
+                                            id="propCat05">
+                                        <label for="propCat05" href="" title="森达">森达</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="bata" value="" class="input-checkbox"
+                                            id="propCat06">
+                                        <label for="propCat06" href="" title="拔佳">拔佳</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="millies" value="" class="input-checkbox"
+                                            id="propCat07">
+                                        <label for="propCat07" href="" title="妙丽">妙丽</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="joypeace" value="" class="input-checkbox"
+                                            id="propCat08">
+                                        <label for="propCat08" href="" title="真美诗">真美诗</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="hushpuppies" value="" class="input-checkbox"
+                                            id="propCat09">
+                                        <label for="propCat09" href="" title="暇步士">暇步士</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="15mins" value="" class="input-checkbox"
+                                            id="propCat010">
+                                        <label for="propCat010" href="" title="15分钟">15分钟</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="skap" value="" class="input-checkbox"
+                                            id="propCat011">
+                                        <label for="propCat011" href="" title="圣伽步">圣伽步</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="bevivo" value="" class="input-checkbox"
+                                            id="propCat012">
+                                        <label for="propCat012" href="" title="bevivo">bevivo</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="innet" value="" class="input-checkbox"
+                                            id="propCat013">
+                                        <label for="propCat013" href="" title="茵奈儿">茵奈儿</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="jipijapa" value="" class="input-checkbox"
+                                            id="propCat014">
+                                        <label for="propCat014" href="" title="Jipi Japa">Jipi Japa</label>
+                                    </li>
+                                </ul>
+                                <div class="cheackBtn-box">
+                                    <div class="multiple-btn">+ 多选</div>
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="sure gray">确认</a>
+                                        <a href="javascript:;" class="cancel">取消</a>
+                                    </div>
+                                </div>
+                                <!-- 更多 -->
+                                <div class="filter-more">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="filter-less">
+                                    <span class="icon"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="radio">
+                            <p>
+                                <i></i>
+                                品类
+                            </p>
+                            <div>
+                                <ul>
+                                    <li class="radio-item">
+                                        <p>
+                                            <i></i>
+                                            <label for="propSubCat10"><a href="" title="女士单鞋">女士单鞋(9796)</a></label>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="UWO" value="满帮鞋" id="propSubCat100">
+                                                <label for="propSubCat100"><a href="" title="满帮鞋">满帮鞋(5990)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="N1R" value="休闲鞋" id="propSubCat101">
+                                                <label for="propSubCat101"><a href="" title="休闲鞋">休闲鞋(4711)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="0YN" value="浅口鞋" id="propSubCat102">
+                                                <label for="propSubCat102"><a href="" title="浅口鞋">浅口鞋(3806)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="7BD" value="粗跟鞋" id="propSubCat103">
+                                                <label for="propSubCat103"><a href="" title="粗跟鞋">粗跟鞋(3684)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="N3I" value="平底鞋" id="propSubCat104">
+                                                <label for="propSubCat104"><a href="" title="平底鞋">平底鞋(2274)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="Q2T" value="乐福鞋" id="propSubCat105">
+                                                <label for="propSubCat105"><a href="" title="乐福鞋">乐福鞋(1013)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="TVX" value="坡跟鞋" id="propSubCat106">
+                                                <label for="propSubCat106"><a href="" title="坡跟鞋">坡跟鞋(428)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="8YR" value="松糕鞋" id="propSubCat107">
+                                                <label for="propSubCat107"><a href="" title="松糕鞋">松糕鞋(205)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="KNO" value="内增高" id="propSubCat108">
+                                                <label for="propSubCat108"><a href="" title="内增高">内增高(133)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="MML" value="尖头鞋" id="propSubCat109">
+                                                <label for="propSubCat109"><a href="" title="尖头鞋">尖头鞋(131)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="2KF" value="豆豆鞋" id="propSubCat1010">
+                                                <label for="propSubCat1010"><a href="" title="豆豆鞋">豆豆鞋(107)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="ETB" value="婚鞋" id="propSubCat1011">
+                                                <label for="propSubCat1011"><a href="" title="婚鞋">婚鞋(101)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="18N" value="超高跟" id="propSubCat1012">
+                                                <label for="propSubCat1012"><a href="" title="超高跟">超高跟(92)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="CUG" value="布洛克鞋" id="propSubCat1013">
+                                                <label for="propSubCat1013"><a href="" title="布洛克鞋">布洛克鞋(73)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="K4I" value="防水台" id="propSubCat1014">
+                                                <label for="propSubCat1014"><a href="" title="防水台">防水台(12)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="MT3" value="运动风" id="propSubCat1015">
+                                                <label for="propSubCat1015"><a href="" title="运动风">运动风(6)</a></label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="radio-item">
+                                        <p>
+                                            <i></i>
+                                            <label for="propSubCat11"><a href="" title="女士凉鞋">女士凉鞋(5933)</a></label>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="9M4" value="纯凉鞋" id="propSubCat110">
+                                                <label for="propSubCat110"><a href="" title="纯凉鞋">纯凉鞋(2635)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="W4Z" value="后空凉鞋" id="propSubCat111">
+                                                <label for="propSubCat111"><a href=""
+                                                        title="后空凉鞋">后空凉鞋(1657)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="LWB" value="拖鞋" id="propSubCat112">
+                                                <label for="propSubCat112"><a href="" title="拖鞋">拖鞋(1181)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="NX1" value="坡跟凉鞋" id="propSubCat113">
+                                                <label for="propSubCat113"><a href="" title="坡跟凉鞋">坡跟凉鞋(492)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="KBN" value="中空凉鞋" id="propSubCat114">
+                                                <label for="propSubCat114"><a href="" title="中空凉鞋">中空凉鞋(446)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="Z7R" value="凉靴" id="propSubCat115">
+                                                <label for="propSubCat115"><a href="" title="凉靴">凉靴(14)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="DT3" value="鱼嘴凉鞋" id="propSubCat116">
+                                                <label for="propSubCat116"><a href="" title="鱼嘴凉鞋">鱼嘴凉鞋(1)</a></label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="radio-item">
+                                        <p>
+                                            <i></i>
+                                            <label for="propSubCat12"><a href="" title="女士靴子">女士靴子(5998)</a></label>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="3CN" value="短靴" id="propSubCat120">
+                                                <label for="propSubCat120"><a href="" title="短靴">短靴(4484)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="0VD" value="绒里靴" id="propSubCat121">
+                                                <label for="propSubCat121"><a href="" title="绒里靴">绒里靴(1573)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="78V" value="中靴" id="propSubCat122">
+                                                <label for="propSubCat122"><a href="" title="中靴">中靴(900)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="11U" value="马丁靴" id="propSubCat123">
+                                                <label for="propSubCat123"><a href="" title="马丁靴">马丁靴(765)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="E6M" value="超长靴" id="propSubCat124">
+                                                <label for="propSubCat124"><a href="" title="超长靴">超长靴(371)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="K8M" value="长靴" id="propSubCat125">
+                                                <label for="propSubCat125"><a href="" title="长靴">长靴(243)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="WKL" value="雪地靴" id="propSubCat126">
+                                                <label for="propSubCat126"><a href="" title="雪地靴">雪地靴(161)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="1Q2" value="坡跟靴" id="propSubCat127">
+                                                <label for="propSubCat127"><a href="" title="坡跟靴">坡跟靴(145)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="0W4" value="骑士靴" id="propSubCat128">
+                                                <label for="propSubCat128"><a href="" title="骑士靴">骑士靴(92)</a></label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <input type="radio" name="RY6" value="及踝靴" id="propSubCat129">
+                                                <label for="propSubCat129"><a href="" title="及踝靴">及踝靴(81)</a></label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="checkbox hideDefault">
+                            <p><i></i>价格</p>
+                            <div>
+                                <ul name="price_group">
+                                    <li>
+                                        <input type="checkbox" name="000" value="" class="input-checkbox"
+                                            id="propCat20">
+                                        <label for="propCat20" href="" title="1-50元">1-50元</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="001" value="" class="input-checkbox"
+                                            id="propCat21">
+                                        <label for="propCat21" href="" title="51-100元">51-100元</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="002" value="" class="input-checkbox"
+                                            id="propCat22">
+                                        <label for="propCat22" href="" title="101-200元">101-200元</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="003" value="" class="input-checkbox"
+                                            id="propCat23">
+                                        <label for="propCat23" href="" title="201-300元">201-300元</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="004" valu" class="input-checkbox" id="propCat24">
+                                        <label for="propCat24" hre" title="301-500元">301-500元</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="005" valu" class="input-checkbox" id="propCat25">
+                                        <label for="propCat25" hre" title="501-700元">501-700元</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="006" valu" class="input-checkbox" id="propCat26">
+                                        <label for="propCat26" hre" title="701-1000元">701-1000元</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="007" valu" class="input-checkbox" id="propCat27">
+                                        <label for="propCat27" hre" title="1000以上">1000以上</label>
+                                    </li>
+                                </ul>
+                                <div class="cheackBtn-box">
+                                    <div class="multiple-btn">+ 多选</div>
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="sure gray">确认</a>
+                                        <a href="javascript:;" class="cancel">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkbox hideDefault">
+                            <p><i></i>尺码</p>
+                            <div>
+                                <ul name="size_list">
+                                    <li>
+                                        <input type="checkbox" name="07C" value="" class="input-checkbox"
+                                            id="propCat30">
+                                        <label for="propCat30" href="" title="30">30</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="06U" value="" class="input-checkbox"
+                                            id="propCat31">
+                                        <label for="propCat31" href="" title="31">31</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="08D" value="" class="input-checkbox"
+                                            id="propCat32">
+                                        <label for="propCat32" href="" title="32">32</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="07V" value="" class="input-checkbox"
+                                            id="propCat33">
+                                        <label for="propCat33" href="" title="33">33</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="05M" value="" class="input-checkbox"
+                                            id="propCat34">
+                                        <label for="propCat34" href="" title="34">34</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="051" value="" class="input-checkbox"
+                                            id="propCat35">
+                                        <label for="propCat35" href="" title="35">35</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="06I" value="" class="input-checkbox"
+                                            id="propCat36">
+                                        <label for="propCat36" href="" title="36">36</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="068" value="" class="input-checkbox"
+                                            id="propCat37">
+                                        <label for="propCat37" href="" title="37">37</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="03J" value="" class="input-checkbox"
+                                            id="propCat38">
+                                        <label for="propCat38" href="" title="38">38</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="038" value="" class="input-checkbox"
+                                            id="propCat39">
+                                        <label for="propCat39" href="" title="39">39</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01W" value="" class="input-checkbox"
+                                            id="propCat310">
+                                        <label for="propCat310" href="" title="40">40</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="019" value="" class="input-checkbox"
+                                            id="propCat311">
+                                        <label for="propCat311" href="" title="41">41</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01S" value="" class="input-checkbox"
+                                            id="propCat312">
+                                        <label for="propCat312" href="" title="42">42</label>
+                                    </li>
+                                </ul>
+                                <div class="cheackBtn-box">
+                                    <div class="multiple-btn">+ 多选</div>
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="sure gray">确认</a>
+                                        <a href="javascript:;" class="cancel">取消</a>
+                                    </div>
+                                </div>
+                                <!-- 更多 -->
+                                <div class="filter-more">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="filter-less">
+                                    <span class="icon"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkbox hideDefault">
+                            <p><i></i>颜色</p>
+                            <div>
+                                <ul name="prop_value_no_00T">
+                                    <li>
+                                        <input type="checkbox" name="00A" value="" class="input-checkbox"
+                                            id="propCat40">
+                                        <label for="propCat40" href="" title="黑色">黑色</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="009" value="" class="input-checkbox"
+                                            id="propCat41">
+                                        <label for="propCat41" href="" title="白色">白色</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="008" value="" class="input-checkbox"
+                                            id="propCat42">
+                                        <label for="propCat42" href="" title="灰色">灰色</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="00E" value="" class="input-checkbox"
+                                            id="propCat43">
+                                        <label for="propCat43" href="" title="红色">红色</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="00B" value="" class="input-checkbox"
+                                            id="propCat44">
+                                        <label for="propCat44" href="" title="棕色">棕色</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="00S" value="" class="input-checkbox"
+                                            id="propCat45">
+                                        <label for="propCat45" href="" title="粉色">粉色</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="003" value="" class="input-checkbox"
+                                            id="propCat46">
+                                        <label for="propCat46" href="" title="绿色">绿色</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="00F" value="" class="input-checkbox"
+                                            id="propCat47">
+                                        <label for="propCat47" href="" title="蓝色">蓝色</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="00G" value="" class="input-checkbox"
+                                            id="propCat48">
+                                        <label for="propCat48" href="" title="黄色">黄色</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="0I5" value="" class="input-checkbox"
+                                            id="propCat49">
+                                        <label for="propCat49" href="" title="米黄色">米黄色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0I8" value="" class="input-checkbox"
+                                            id="propCat410">
+                                        <label for="propCat410" href="" title="银色">银色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="007" value="" class="input-checkbox"
+                                            id="propCat411">
+                                        <label for="propCat411" href="" title="拼色">拼色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="005" value="" class="input-checkbox"
+                                            id="propCat412">
+                                        <label for="propCat412" href="" title="米色">米色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="001" value="" class="input-checkbox"
+                                            id="propCat413">
+                                        <label for="propCat413" href="" title="紫色">紫色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0I4" value="" class="input-checkbox"
+                                            id="propCat414">
+                                        <label for="propCat414" href="" title="栗色">栗色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0IA" value="" class="input-checkbox"
+                                            id="propCat415">
+                                        <label for="propCat415" href="" title="金色">金色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0ID" value="" class="input-checkbox"
+                                            id="propCat416">
+                                        <label for="propCat416" href="" title="杏色">杏色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0I6" value="" class="input-checkbox"
+                                            id="propCat417">
+                                        <label for="propCat417" href="" title="巧克力色">巧克力色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="000" value="" class="input-checkbox"
+                                            id="propCat418">
+                                        <label for="propCat418" href="" title="金银色">金银色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="002" value="" class="input-checkbox"
+                                            id="propCat419">
+                                        <label for="propCat419" href="" title="驼杏色">驼杏色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0I9" value="" class="input-checkbox"
+                                            id="propCat420">
+                                        <label for="propCat420" href="" title="金属银">金属银</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00C" value="" class="input-checkbox"
+                                            id="propCat421">
+                                        <label for="propCat421" href="" title="啡色">啡色</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00D" value="" class="input-checkbox"
+                                            id="propCat422">
+                                        <label for="propCat422" href="" title="橙色">橙色</label>
+                                    </li>
+                                </ul>
+                                <div class="cheackBtn-box">
+                                    <div class="multiple-btn">+ 多选</div>
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="sure gray">确认</a>
+                                        <a href="javascript:;" class="cancel">取消</a>
+                                    </div>
+                                </div>
+                                <!-- 更多 -->
+                                <div class="filter-more">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="filter-less">
+                                    <span class="icon"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="checkbox hideDefault">
+                            <p><i></i>款式季节</p>
+                            <div>
+                                <ul name="prop_value_no_050">
+                                    <li>
+                                        <input type="checkbox" name="003" value="" class="input-checkbox"
+                                            id="propCat50">
+                                        <label for="propCat50" href="" title="冬季">冬季</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="000" value="" class="input-checkbox"
+                                            id="propCat51">
+                                        <label for="propCat51" href="" title="春季">春季</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="001" value="" class="input-checkbox"
+                                            id="propCat52">
+                                        <label for="propCat52" href="" title="夏季">夏季</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="002" value="" class="input-checkbox"
+                                            id="propCat53">
+                                        <label for="propCat53" href="" title="秋季">秋季</label>
+                                    </li>
+                                </ul>
+                                <div class="cheackBtn-box">
+                                    <div class="multiple-btn">+ 多选</div>
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="sure gray">确认</a>
+                                        <a href="javascript:;" class="cancel">取消</a>
+                                    </div>
+                                </div>
+                                <!-- 更多 -->
+                            </div>
+                        </li>
+                        <li class="checkbox hideDefault">
+                            <p><i></i>风格</p>
+                            <div>
+                                <ul name="prop_value_no_04T">
+                                    <li>
+                                        <input type="checkbox" name="020" value="" class="input-checkbox"
+                                            id="propCat70">
+                                        <label for="propCat70" href="" title="休闲">休闲</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="016" value="" class="input-checkbox"
+                                            id="propCat71">
+                                        <label for="propCat71" href="" title="简约">简约</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="003" value="" class="input-checkbox"
+                                            id="propCat72">
+                                        <label for="propCat72" href="" title="OL通勤">OL通勤</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="0G4" value="" class="input-checkbox"
+                                            id="propCat73">
+                                        <label for="propCat73" href="" title="英伦">英伦</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="00K" value="" class="input-checkbox"
+                                            id="propCat74">
+                                        <label for="propCat74" href="" title="甜美">甜美</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="007" value="" class="input-checkbox"
+                                            id="propCat75">
+                                        <label for="propCat75" href="" title="欧美">欧美</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="000" value="" class="input-checkbox"
+                                            id="propCat76">
+                                        <label for="propCat76" href="" title="复古">复古</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="01A" value="" class="input-checkbox"
+                                            id="propCat77">
+                                        <label for="propCat77" href="" title="性感">性感</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="008" value="" class="input-checkbox"
+                                            id="propCat78">
+                                        <label for="propCat78" href="" title="韩版">韩版</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="0KJ" value="" class="input-checkbox"
+                                            id="propCat79">
+                                        <label for="propCat79" href="" title="帅气">帅气</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00N" value="" class="input-checkbox"
+                                            id="propCat710">
+                                        <label for="propCat710" href="" title="文艺">文艺</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01X" value="" class="input-checkbox"
+                                            id="propCat711">
+                                        <label for="propCat711" href="" title="时尚休闲">时尚休闲</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="014" value="" class="input-checkbox"
+                                            id="propCat712">
+                                        <label for="propCat712" href="" title="优雅">优雅</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00S" value="" class="input-checkbox"
+                                            id="propCat713">
+                                        <label for="propCat713" href="" title="时尚">时尚</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01C" value="" class="input-checkbox"
+                                            id="propCat714">
+                                        <label for="propCat714" href="" title="中性">中性</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01Y" value="" class="input-checkbox"
+                                            id="propCat715">
+                                        <label for="propCat715" href="" title="城市休闲">城市休闲</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01L" value="" class="input-checkbox"
+                                            id="propCat716">
+                                        <label for="propCat716" href="" title="日系">日系</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00C" value="" class="input-checkbox"
+                                            id="propCat717">
+                                        <label for="propCat717" href="" title="舒适">舒适</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0KL" value="" class="input-checkbox"
+                                            id="propCat718">
+                                        <label for="propCat718" href="" title="东方典雅">东方典雅</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="017" value="" class="input-checkbox"
+                                            id="propCat719">
+                                        <label for="propCat719" href="" title="田园">田园</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00G" value="" class="input-checkbox"
+                                            id="propCat720">
+                                        <label for="propCat720" href="" title="活力">活力</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="005" value="" class="input-checkbox"
+                                            id="propCat721">
+                                        <label for="propCat721" href="" title="民族风">民族风</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0KM" value="" class="input-checkbox"
+                                            id="propCat722">
+                                        <label for="propCat722" href="" title="波西米亚风情">波西米亚风情</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00H" value="" class="input-checkbox"
+                                            id="propCat723">
+                                        <label for="propCat723" href="" title="生活">生活</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00I" value="" class="input-checkbox"
+                                            id="propCat724">
+                                        <label for="propCat724" href="" title="百搭">百搭</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00J" value="" class="input-checkbox"
+                                            id="propCat725">
+                                        <label for="propCat725" href="" title="英伦风">英伦风</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00M" value="" class="input-checkbox"
+                                            id="propCat726">
+                                        <label for="propCat726" href="" title="新潮">新潮</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00A" value="" class="input-checkbox"
+                                            id="propCat727">
+                                        <label for="propCat727" href="" title="正装">正装</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00Y" value="" class="input-checkbox"
+                                            id="propCat728">
+                                        <label for="propCat728" href="" title="性感妩媚">性感妩媚</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="009" value="" class="input-checkbox"
+                                            id="propCat729">
+                                        <label for="propCat729" href="" title="淑女">淑女</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01F" value="" class="input-checkbox"
+                                            id="propCat730">
+                                        <label for="propCat730" href="" title="学院风">学院风</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="02N" value="" class="input-checkbox"
+                                            id="propCat731">
+                                        <label for="propCat731" href="" title="运动风">运动风</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00O" value="" class="input-checkbox"
+                                            id="propCat732">
+                                        <label for="propCat732" href="" title="知性">知性</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01M" value="" class="input-checkbox"
+                                            id="propCat733">
+                                        <label for="propCat733" href="" title="清新">清新</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01V" value="" class="input-checkbox"
+                                            id="propCat734">
+                                        <label for="propCat734" href="" title="商务休闲">商务休闲</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="01Z" value="" class="input-checkbox"
+                                            id="propCat735">
+                                        <label for="propCat735" href="" title="可爱">可爱</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0J3" value="" class="input-checkbox"
+                                            id="propCat736">
+                                        <label for="propCat736" href="" title="玛丽珍">玛丽珍</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="002" value="" class="input-checkbox"
+                                            id="propCat737">
+                                        <label for="propCat737" href="" title="瑞丽">瑞丽</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="004" value="" class="input-checkbox"
+                                            id="propCat738">
+                                        <label for="propCat738" href="" title="原创设计">原创设计</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="006" value="" class="input-checkbox"
+                                            id="propCat739">
+                                        <label for="propCat739" href="" title="复古/宫廷">复古/宫廷</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00B" value="" class="input-checkbox"
+                                            id="propCat740">
+                                        <label for="propCat740" href="" title="日韩">日韩</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="00X" value="" class="input-checkbox"
+                                            id="propCat741">
+                                        <label for="propCat741" href="" title="经典上班">经典上班</label>
+                                    </li>
+                                    <li style="display: none;">
+                                        <input type="checkbox" name="0J4" value="" class="input-checkbox"
+                                            id="propCat742">
+                                        <label for="propCat742" href="" title="穆勒鞋">穆勒鞋</label>
+                                    </li>
+                                </ul>
+                                <div class="cheackBtn-box">
+                                    <div class="multiple-btn">+ 多选</div>
+                                    <div class="btn-wrap">
+                                        <a href="javascript:;" class="sure gray">确认</a>
+                                        <a href="javascript:;" class="cancel">取消</a>
+                                    </div>
+                                </div>
+                                <!-- 更多 -->
+                                <div class="filter-more">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="filter-less">
+                                    <span class="icon"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div class="filter-sub-content">
+
+
+                <div class="sub-wrap">
+                    <div class="sub-tab-title">
+                        <ul class="sub-title-tab">
+                            <!-- <li>
+                                <a title="新品" class="" href="">新品</a>
+                            </li> -->
+                            <li>
+                                <a href="javascript:void(0)" data-sort="default " class="active">默认排序</a>
+                            </li>
+                            <!--   <li>
+                                <a title="排序" class="" href="">推荐</a>
+                            </li> -->
+                            <li>
+                                <a href="javascript:void(0)" data-sort="price_desc">按价格由高到低</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" data-sort="price_asc">按价格由低到高</a>
+                            </li>
+                        </ul>
+                        <!-- <div class="page-sum">
+                            <span>1</span> -
+                            <span>271</span>页 /
+                            <s">下一页&gt;</a>
+                                </span>
+                        </div> -->
+                    </div>
+                    <div class="actt_panel sub-goods-list" id="commodity_part_result">
+                        <div class="actt_panel_bd">
+                            <ul class="proList new_prdlist" id="proList">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav style="text-align: right;">
+        <ul class="pagination">
+            <li id="prevPage">
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">上一页</span>
+                </a>
+            </li>
+            <li id="nextPage">
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">下一页</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- 尾部 -->
+    <div class="foot"></div>
+    <script>
+        $(".header").load("head.html");
+        $(".demod").load("demo.html");
+        $(".foot").load("foot.html");
+    </script>
+</body>
+
+</html>

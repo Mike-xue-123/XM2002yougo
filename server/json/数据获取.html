@@ -24,7 +24,46 @@
 
            })
            JSON.stringify(arr); */
-    </script>
+
+        // // 分析当前的标签结构，找出需要提取的数据标签
+        var lis = document.querySelectorAll("#proList")[0].children;
+        // 建立一个空的数组，来存储提取出来的数据
+        var data = [];
+        // 开启循环，每循环一次就获取当前标签
+        var index = 1;
+        for (var i = 0, len = lis.length; i < len; i++) {
+            var ele = lis[i];
+            var goods_id = i + 1;
+            //提取出当前的标签数据，用ele表示当前数据
+            var img = ele.querySelector("img").src;
+            var particulars = ele.querySelector(".nptt").innerText;
+            var priceA = ele.querySelector(".price_sc .cur-price ").innerText;
+            var priceB = ele.querySelector(".price_sc .origin-price").innerText;
+
+            // 把提取出来的数据组织到一个对象中
+            var o = {};
+            o.goods_id = goods_id;
+            o.particulars = particulars;
+            o.priceA = priceA;
+            o.img = img;
+            o.priceB = priceB;
+            // 把对象添加到数组中
+            data.push(o)
+        }
+        console.log(JSON.stringify(data));
+
+        var arr = [];
+        var oDiv = document.querySelectorAll(".swiper-sub-item");
+        Array.from(oDiv).forEach(Element => {
+                    var o = {};
+                    o.imgA = oDiv.getElementsByTagName("img")[0].src;
+                    o.ingB = oDiv.getElementsByTagName("img")[1].src;
+                    o.title = oDiv.querySelector("price-wrap").innerText;
+                    o.price = oDiv.querySelector(".price-wrap").innerText;
+                    console.log(arr);
+
+                    arr.push(o);
+                }
     </script>
 </body>
 

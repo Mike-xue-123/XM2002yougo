@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/head.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -58,7 +59,7 @@
             <li class="item">
                 <div class="notice">
                     <a href="" style="color: #fff; ">公告</a>
-                    <div class="notice-content" style="display:none;">
+                    <div class="notice-content loginView">
                         <ul class="notice-list">
                             <li class="item Red">
                                 <a href="">近期物流情况安排通知</a>
@@ -78,6 +79,14 @@
             </li>
         </ul>
     </div>
+
+
+    <script>
+        $(".notice").mouseover(function () {
+            console.log(this);
+
+        })
+    </script>
 </body>
 
 </html>

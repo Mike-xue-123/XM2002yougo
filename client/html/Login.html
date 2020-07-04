@@ -37,32 +37,87 @@
                 </ul>
                 <div class="nreg_form">
                     <form onsubmit="return false;" id="loginform" method="post">
+                        <div class="tab_one">
+                            <dl class="nreg_item ">
+                                <dd>
+                                    <div class="nreg_input_bg">
+                                        <i class="reg_user_name"></i>
+                                        <input type="text" name="email" placeholder="手机号/会员名称/邮箱" id="email_"
+                                            class="nreg_input" maxlength="50" value="">
+                                    </div>
+                                </dd>
+                                <dt>
+                                    <div id="login_email_tip" class="errortips"></div>
+                                </dt>
+                            </dl>
+                            <dl class="nreg_item ">
+                                <dd>
+                                    <div class="nreg_input_bg">
+                                        <i class="reg_password"></i>
+                                        <input type="password" name="password" placeholder="请输入密码" id="password_"
+                                            class="nreg_input" maxlength="50" curcapslockid="0">
+                                    </div>
+                                </dd>
+                                <dt>
+                                    <div id="login_password_tip" class="errortips"></div>
+                                </dt>
+                            </dl>
+                        </div>
 
-                        <dl class="nreg_item ">
-                            <dd>
-                                <div class="nreg_input_bg">
-                                    <i class="reg_user_name"></i>
-                                    <input type="text" name="email" placeholder="手机号/会员名称/邮箱" id="email_"
-                                        class="nreg_input" maxlength="50" value="">
-                                </div>
-                            </dd>
-                            <dt>
-                                <div id="login_email_tip" class="errortips"></div>
-                            </dt>
-                        </dl>
-                        <dl class="nreg_item ">
-                            <dd>
-                                <div class="nreg_input_bg">
-                                    <i class="reg_password"></i>
-                                    <input type="password" name="password" placeholder="请输入密码" id="password_"
-                                        class="nreg_input" maxlength="50" curcapslockid="0">
-                                </div>
-                            </dd>
-                            <dt>
-                                <div id="login_password_tip" class="errortips"></div>
-                            </dt>
-                        </dl>
                         <input type="hidden" name="4f9w9T4P2S" value="8F0X7z" id="loginNonceId">
+                        <div style="display:none;" class="tab_one">
+                            <dl class="nreg_item mobile_regitem clearfix rel" id="mobile_nreg_item">
+                                <dd>
+                                    <div class="nreg_input_bg rel">
+                                        <label class="lab1 nreg_mob_ema"><span class="fl">手机号</span></label>
+                                        <div class="tab_user_name">
+                                            <a id="mobileLink" class="reg_Tab reg_TabCurr" href="javascript:;"
+                                                regtype="mobile"><span>手机号</span></a>
+                                            <input type="hidden" name="option" id="option" value="mobile">
+                                        </div>
+                                        <input type="text" name="mobile" id="reg_mobile_" class="nreg_input"
+                                            valid="Mobile" placeholder="请输入您的手机号码">
+                                    </div>
+                                </dd>
+                                <dt>
+                                    <div id="reg_mobile_tip" class="errortips"></div>
+                                </dt>
+                            </dl>
+                            <dl class="nreg_item email_regitem clearfix rel" id="email_nreg_item" style="display:none;">
+                                <dd>
+                                    <div class="nreg_input_bg">
+
+                                        <div class="tab_user_name">
+                                            <a id="mobileLink" class="reg_Tab " href="javascript:;"
+                                                regtype="mobile"><span>手机号</span><i class="tab_nreg"></i></a>
+                                        </div>
+
+                                    </div>
+                                </dd>
+                                <dt>
+                                    <div id="reg_email_tip" class="errortips"></div>
+                                </dt>
+                            </dl>
+                            <input type="hidden" name="8H8s7I2c6T" value="4u7c8q" id="reg_nonce_id">
+                            <dl id="dlMobileCode" class="nreg_item mobile_regitem clearfix rel">
+                                <dd>
+                                    <div class="nreg_input_bg fl" style="width:235px;">
+                                        <label class="lab1" for="reg_mobile_code_">短信验证码</label>
+                                        <input type="text" name="mobilecode" id="reg_mobile_code_" class="nreg_sinput"
+                                            valid="MsgIdentifyCode" style="width: 155px;">
+                                    </div>
+                                    <div class="fr">
+                                        <a id="sendMsgBtn" href="javascript:;" class="regAutoBtn_1">
+                                            <span style="margin-left:0;" id="getMsgSpan">获取验证码</span>
+                                        </a>
+                                    </div>
+                                </dd>
+                                <dt>
+
+                                    <div id="sendMsgTips" data-msg="sendmsgtips"></div>
+                                </dt>
+                            </dl>
+                        </div>
 
                         <div id="code_container" style="display:none;">
                             <dl class="nreg_item ">

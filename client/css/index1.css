@@ -38,11 +38,6 @@ a {
     position: relative;
 }
 
-.selfadaptat .cen,
-.selfadaptat .ygwrap {
-    width: 1190px;
-}
-
 
 .indexfocus .trgBox {
     position: absolute;
@@ -87,12 +82,6 @@ a {
     font-size: 42px;
     font-weight: 600;
 }
-
-/* .command-title .title,
-.command-title .en-title {
-    color: #333;
-    text-align: center;
-} */
 
 #command-brand .tabs,
 #command-new-products .tabs {
@@ -324,7 +313,9 @@ a {
     height: 31px;
 }
 
-
+.panels.swiper-wrap {
+    display: none;
+}
 
 /* 品牌潮流 */
 .selfadaptat .cen,
@@ -332,9 +323,10 @@ a {
     width: 1190px;
 }
 
+
 .ygwrap {
     margin: 0 auto;
-    height: 1992px;
+    /* width: 1992px; */
     /* background-color: red; */
 }
 

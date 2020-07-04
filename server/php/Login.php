@@ -12,7 +12,7 @@ $password = $_REQUEST["password"];
 #    [2] 如果存在，那么就继续检查密码
 #        [1] 如果密码不正确，那么就返回错误的提示信息(对不起，您的密码不正确！)
 #        [2] 如果密码正确，那么就返回登录成功。
-$sql ="SELECT * FROM 'user' WHERE number='$number'";
+$sql ="SELECT * FROM `user` WHERE number='$number'";
 
 $r = mysqli_query($db,$sql);
 

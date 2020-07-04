@@ -3,9 +3,9 @@
 /* (2) 图形验证码 */
 /* (3) 点击注册 */
 $(() => {
-    $("#number").val(15007219074);
-    $("#password").val("15007219wer");
-    $("#password2").val("15007219wer");
+    // $("#number").val(15007219074);
+    // $("#password").val("15007219wer");
+    // $("#password2").val("15007219wer");
 
     let options = {
         "number": {
@@ -29,7 +29,7 @@ $(() => {
     $(".nreg_from input").blur(function () {
         let action_id = this.id;
         console.log("options", options[action_id]);
-
+        // let res = /^1[3-9]\\d{9}$/.test(val);
         let val = $.trim($(this).val());
         // console.log(options[action]);
         if (eval(options[action_id].res)) {
@@ -75,30 +75,51 @@ $(() => {
         imgCode = r;
 
         /* 自动触发标签的事件 */
-        $("#code2_").trigger("blur");
+        // $("#code2_").trigger("blur");
     });
 
     /* 注册按钮的点击事件 */
-    $("#registerBtn").click(function () {
-        // console.log("click");
+    $("#registerBtn").click(function (e) {
+        // console.log("+++++");
+        e.preventDefault();
+        // console.log("click--");
 
         /* 001-检查用户是否输入了正确的信息并且通过验证，如果没有通过那么就返回 */
-        $("#number,#password,#password2,#code2_").trigger("blur");
-        if ($(".nreg_item").length !== 0) {
+        // $("#number,#password,#password2,#code2_").trigger("blur");
+
+        if ($(".nreg_error").length !== 0) {
+            console.log(1);
             return;
+            // console.log(1);
         }
+        console.log(2);
+
+        // if (!ok0) {
+        //     alert("ok0检查没有通过");
+        // }
+        // $(".submit").click(function () {
+        //     if ("#number,#password,#password2,#code2_") {
+        //         $('form').submit();
+        //     } else {
+        //         return false;
+        //     }
         /* 安全条例 */
 
-        let isCheck = $("#rdu").is(":checked");
+        let isCheck = $("#rules").is(":checked");
+        // console.log(isCheck);
         if (!isCheck) {
             alert("请阅读并同意用户的注册协议!!!");
             return;
         }
+        // console.log(3);
+
         /* 003-发送网络请求把注册相关的信息提交给服务器 */
         let data = {
             number: $.trim($("#number").val()),
-            password: md5($.trim($("#password").val())).substr(0, 10)
+            password: $.trim($("#password").val())
         }
+
+        console.log("click++++");
         $.ajax({
             url: "../../server/php/register.php",
             type: "post",
@@ -113,6 +134,6 @@ $(() => {
             }
         })
 
-    })
+    });
 
 })
