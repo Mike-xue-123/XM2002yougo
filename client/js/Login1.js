@@ -42,13 +42,45 @@ $(() => {
             /* 如果 */
             if (data.status == "success") {
                 alert(data.msg);
+                // localStorage.setItem("number", number);
+                // localStorage.setItem("password", password);
                 /* 跳转 */
-                // location.href = "../html/index.html";
+                location.href = "../html/list.html";
             } else {
                 alert(data.msg);
             }
         })
 
+
+    })
+
+    /* 给登录按钮添加点击事件 */
+    $(".nlog_submit").click(function () {
+        let number = $.trim($("#numberID").val());
+        let password = $.trim($("#passwordID").val());
+
+        $.ajax({
+            type: "post",
+            url: "../../server/php/Login1.php",
+            data: {
+                number,
+                password
+            },
+            dataType: "json",
+        }).done(data => {
+            console.log(data);
+            if (data.status == "success") {
+                /* ..登录成功.. */
+                /* (1) 要把用户的id和名字保存起来 */
+                localStorage.setItem("Id", data.data.Id);
+                localStorage.setItem("number", data.data.number);
+
+                /* (2) 跳转回列表页 */
+                location.href = "./list.html";
+            } else {
+                alert(data.data.msg);
+            }
+        })
 
     })
 })

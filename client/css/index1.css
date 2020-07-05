@@ -147,6 +147,20 @@ a {
     z-index: 1;
 }
 
+.indexfocusbd .img-box {
+    height: 100%;
+    position: relative;
+}
+
+.indexfocusbd .img-box li {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s;
+    opacity: 0;
+    font-size: 50px;
+}
+
 #command-brand .swiper-wrap .swiper-container .swiper-item-wrap,
 #command-new-products .swiper-wrap .swiper-container .swiper-item-wrap {
     position: absolute;

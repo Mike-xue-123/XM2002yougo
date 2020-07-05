@@ -2,6 +2,7 @@ $(() => {
     getDataAndRenderUI("default");
     getPageCount();
 
+
     /* 获取页码的数量 */
     function getPageCount() {
         $.ajax({
@@ -31,7 +32,7 @@ $(() => {
         }).done(data => {
             let html = data.map(item => {
                 return ` <li>
-			          <div class="srchlst-wrap">
+			          <div class="srchlst-wrap"data-id=${item.goods_id}>
                         <div class="hd goods-head">
 				           <a >
                             <sup no="101361998" class="mark_small_101361998 salepic"></sup>
@@ -47,7 +48,9 @@ $(() => {
                                 <del class="origin-price">¥&nbsp;<i>${item.priceB}</i></del>
                             </p>
                             <em class="collect" id="${item.goods_id}"  price="589"></em>
-		        		</div>
+                             <p class="addCart">加入购物车</p>
+                        </div>
+                       
 	        		  </div>
 			    	</li>`
 
@@ -143,6 +146,30 @@ $(() => {
         $(".p-class").eq(page).addClass("active").siblings().removeClass("active");
         // console.log($("pagination").children("li:gt(0)").eq(page));
         getDataAndRenderUI($(".active").data().sort, page)
+    })
+
+
+    /* 加入购物车点击事件的处理 */
+    $(".new_prdlist").on("click", ".addCart", function () {
+        let Id = localStorage.getItem("Id") || "";
+        let number = localStorage.getItem("number") || "";
+        let good_id = $(this).parent().attr("data_id");
+
+        if (!Id && !number) {
+            $.ajax({
+                url: "../../server/php/Cart.php",
+                data: {
+                    Id,
+                    good_id
+                },
+            }).done(data => {
+                console.log("返回值", data);
+
+
+            });
+        } else {
+            location.href = "../html/Login.html"
+        }
     })
 
 })

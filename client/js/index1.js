@@ -113,16 +113,38 @@ $(() => {
     })
 
 
-    /* 今日大牌tab切换 */
+    /* 轮播图 */
+    // 获取对应元素
+    var box = document.querySelector('#indexfocus');
+    var imgList = box.querySelectorAll('.imgBox a');
+    var roundList = box.querySelectorAll('.trgBox span');
+    // var prev = box.querySelector('.box-btn-left');
+    // var next = box.querySelector('.box-btn-right');
+    var index = 0; // 当前显示的页面索引
+    var timer = null;
 
-    // $(".tab-s a").click(function () {
-    //     console.log(this);
-    //     // e.preventDefault();
-    //     /* 设置当前选中标签 */
-    //     $(this).addClass("active").siblings().removeClass("active");
+    function animate(index) {
+        for (let i = 0; i < imgList.length; i++) {
+            imgList[i].classList.remove('active');
+            roundList[i].className = "";
+        }
+        roundList[index].className = "active";
+        imgList[index].classList.add('active');
+    }
 
-    //     let index = $(this).index();
-    //     $(".brand-pictures").eq(index).addClass("loginViewCurrent").siblings().removeClass("loginViewCurrent");
-    //     // $(".swiper-wrap").eq(index).addClass("loginViewCurrent").style("display:").siblings().removeClass("loginViewCurrent");
-    // });
+    // next.onclick = () => qie('next');
+    // prev.onclick = () => qie('prev');
+    // for (let i = 0; i < roundList.length; i++) roundList[i].onclick = () => animate(index = i);
+
+    function qie(med) {
+        if (med == "next" && ++index == 4) index = 0;
+        if (med == "prev" && --index == -1) index = 3;
+        animate(index);
+    }
+
+    // 自动播放
+    timer = setInterval(() => qie('next'), 2000);
+    box.onmouseleave = () => timer = setInterval(() => qie('next'), 2000);
+    box.onmouseenter = () => clearInterval(timer);
+
 })

@@ -1914,7 +1914,7 @@ s,
     left: 0;
     width: 50px;
     height: 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid #eaeaea;
     background: #999 50% top no-repeat;
     opacity: .2;
@@ -1930,9 +1930,9 @@ s,
     margin-left: 500px;
     margin-top: -480px;
     zoom: 1;
-    background: url(//s1.ygimg.cn/template/common/images/loading.gif?50c5e3e79b276c92df6cc52caeb464f0) #fff no-repeat center center;
+    background: url(http://s1.ygimg.cn/template/common/images/loading.gif?50c5e3e79b276c92df6cc52caeb464f0) #fff no-repeat center center;
     border: 1px solid #000;
-    display: none;
+    /* display: none; */
     text-align: center;
     overflow: hidden
 }
@@ -1941,7 +1941,7 @@ s,
     width: 482px;
     height: 482px;
     position: absolute;
-    background: url(//s1.ygimg.cn/template/common/images/reload.gif?325472601571f31e1bf00674c368d335) no-repeat;
+    background: url(http://s1.ygimg.cn/template/common/images/reload.gif?325472601571f31e1bf00674c368d335) no-repeat;
     top: 0;
     left: 0;
     display: none;
@@ -1956,7 +1956,7 @@ s,
     height: 80px;
     overflow: hidden;
     border: 1px solid #dedede;
-    background: #fff url(//s1.ygimg.cn/template/common/images/sloading.gif?7b9776076d5fceef4993b55c9383dedd) no-repeat 40px 40px;
+    background: #fff url(http://s1.ygimg.cn/template/common/images/sloading.gif?7b9776076d5fceef4993b55c9383dedd) no-repeat 40px 40px;
     text-align: center;
     opacity: .7;
     -moz-opacity: .7;
@@ -1972,7 +1972,7 @@ s,
     width: 101px;
     height: 19px;
     position: absolute;
-    background: #fff url(/template/common/images/icons_goods.png?4217464af881296caac2fc8666b2fecf) 0 -93px no-repeat;
+    background: #fff url(http:/template/common/images/icons_goods.png?4217464af881296caac2fc8666b2fecf) 0 -93px no-repeat;
     right: 1px;
     bottom: -1px;
     z-index: 10;
@@ -2012,7 +2012,7 @@ s,
 
 .detail_assure_icon {
     height: 19px;
-    background: url(//s1.ygimg.cn/template/common/images/icons_goods.png?4217464af881296caac2fc8666b2fecf) no-repeat scroll 0 bottom;
+    background: url(http://s1.ygimg.cn/template/common/images/icons_goods.png?4217464af881296caac2fc8666b2fecf) no-repeat scroll 0 bottom;
     margin: 15px 6px 10px;
     clear: both
 }
